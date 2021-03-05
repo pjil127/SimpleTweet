@@ -21,6 +21,11 @@ public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
 
+		getSupportActionBar().setDisplayShowHomeEnabled(true);
+		getSupportActionBar().setDisplayShowTitleEnabled(false);
+		getSupportActionBar().setLogo(R.drawable.twitterlogo3);
+		getSupportActionBar().setDisplayUseLogoEnabled(true);
+
 		final SampleModel sampleModel = new SampleModel();
 		sampleModel.setName("CodePath");
 
